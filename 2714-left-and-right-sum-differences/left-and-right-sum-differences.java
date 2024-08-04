@@ -13,7 +13,7 @@ class Solution {
          int sum=0;
         for(int i=nums.length-2;i>=0;i--){
          sum+=nums[i+1];
-            num1[i]=sum;
+            num1[i]+=sum;
         }
 
         int[] num2=new int[nums.length];
