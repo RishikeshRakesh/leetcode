@@ -14,9 +14,9 @@ class Solution
             return;
         }
         else 
-        { //start = 0 
+        {  
             for(int i=start ;  i<=end ; i++)
-            { // i = 0 
+            {  
                int temp = nums[i]; 
                nums[i]  = nums[start]; 
                nums[start] = temp; 
