@@ -3,17 +3,17 @@ class Solution {
         int a=0;
         int b=0;
         int n=encoded.length+1;
-        for(int i=0;i<n-1;i+=2){
+        for(int i=1;i<n;i+=2){
             a^=encoded[i];
         }
-        for(int j=0;j<=n;j++){
+        for(int j=1;j<=n;j++){
             b^=j;
         }
         
         int[] val=new int[n];
-        val[n-1]=a^b;
-        for(int i=n-2;i>=0;i--){
-            val[i]=val[i+1]^encoded[i];
+        val[0]=a^b;
+        for(int i=0;i<encoded.length;i++){
+            val[i+1]=val[i]^encoded[i];
         }
         return val;
     }
