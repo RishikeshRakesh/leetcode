@@ -5,29 +5,27 @@ class Solution {
         int right=height.length-1;
         int width=height.length-1;
         while(left<right){
+            int ans=0;
             if(height[left]<height[right]){
-                int ans=height[left]*width;
+                ans=height[left]*width;
                   width--;
                   left++;
-
-                if(max<ans){
-                    max=ans;
                     
-                }
+                
                
 
             }
              else{
-                int ans=height[right]*width;
+                ans=height[right]*width;
                  width--;
                 right--;
 
-                if(max<ans){
-                    max=ans;
+                
                    
                 }
                 
-            }
+             if(max<ans){
+                    max=ans;}
 
 
         }
