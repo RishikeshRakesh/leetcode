@@ -4,8 +4,9 @@ class Solution {
         int s1=s.length();
         int s2=t.length();
         while(s1>i && s2>j){
-           
-            if(s.charAt(i)==t.charAt(j)){
+           char c=s.charAt(i);
+           char c1=t.charAt(j);
+            if(c==c1){
                   i++;
             }
             j++;
