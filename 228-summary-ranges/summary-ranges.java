@@ -13,7 +13,6 @@ class Solution {
                         String p1=""+nums[i];
                         String p2=p+"->"+p1;
                         list.add(p2);
-                        break;
                     }
 
             }
