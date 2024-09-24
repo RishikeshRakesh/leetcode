@@ -8,7 +8,7 @@ class Solution {
                 c++;
                 if(c==1){
                 ans+=nums[i];
-                break;
+               
                 }
                 else if(c>1){
                     ans^=nums[i];
