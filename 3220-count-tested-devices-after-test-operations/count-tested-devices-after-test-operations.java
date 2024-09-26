@@ -3,7 +3,7 @@ class Solution {
         int c=0;
         int n=batteryPercentages.length;
           for(int i=0;i<n;i++){
-            if(batteryPercentages[i]==0){
+            if(batteryPercentages[i]<=0){
                 continue;
             }
             else if(batteryPercentages[i]>0){
