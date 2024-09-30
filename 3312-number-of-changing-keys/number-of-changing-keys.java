@@ -6,8 +6,7 @@ class Solution {
             if(str.charAt(i)!=str.charAt(i+1)){
                 c++;
             }
-            
-        }
+     }
         return c;
     }
 }
