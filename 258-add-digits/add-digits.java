@@ -4,16 +4,16 @@ class Solution {
         int ans=0;
        
         while(num>0){
-                int n=num;
-                while(n>0){
-                int d=n%10;
+               
+                while(num>0){
+                int d=num%10;
                 sum+=d;
-                n/=10;
+                num/=10;
                 }
             num=sum;
-            n=num;
-            if(n<=9 && n>=0){
-                ans=n;
+            
+            if(num<=9 && num>=0){
+                ans=num;
                 break;
             }
             sum=0;
