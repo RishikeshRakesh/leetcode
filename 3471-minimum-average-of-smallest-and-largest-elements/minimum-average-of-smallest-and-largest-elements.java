@@ -3,7 +3,7 @@ class Solution {
         int l=0;
         int r=nums.length-1;
         Arrays.sort(nums);
-        double sum=Double.MAX_VALUE;
+        double sum=0;
         Double max=Double.MAX_VALUE;
         while(l<r){
             sum=(nums[l]+nums[r])/2.0;
